@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Note;
+use Session;
 
 class noteController extends Controller
 {
@@ -40,7 +41,7 @@ class noteController extends Controller
         //find id and update
         $note = Note::find($request->id);
         $note->title = $request->title;
-        $note->body = $request->body;
+        $note->content = $request->body;
         $note->save();
         //return back to view
         Session::flash('success', 'New note has been updated!');

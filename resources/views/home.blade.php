@@ -27,7 +27,7 @@
                     <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">{{ $note->title }}</h5>
-                        <p class="card-text">{{ $note->body }}</p>
+                        <p class="card-text">{{ $note->content }}</p>
                         <a href="{{ Route('update.note.page', $note->id) }}" class="btn btn-primary">Update</a>
                         <a href="{{ Route('delete.note', $note->id) }}" class="btn btn-danger">Delete</a>
                     </div>

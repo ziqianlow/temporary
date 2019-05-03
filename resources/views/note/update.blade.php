@@ -16,7 +16,7 @@
             <input type="hidden" name="id" value="{{ $note->id }}">
             <div class="form-group">
                 <label for="exampleInputEmail1">Body</label>
-                <textarea name="body" class="form-control" aria-describedby="emailHelp">{{ $note->body }}</textarea>
+                <textarea name="body" class="form-control" aria-describedby="emailHelp">{{ $note->content }}</textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
             </form>
